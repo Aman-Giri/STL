@@ -1,0 +1,28 @@
+Short Notes: 
+------------
+STL array: Static contiguous array
+Vector: Dynamic contiguous array
+Dequeue: double ended queue
+List: its a doubly-linked list
+stack: adapts a container to provide stack (LIFO data structure)
+Queue: adapts a container to provide stack (FIFO data structure)
+priority_queue: We can create the max heap and the min heap from this.
+    Explanation for the min heap: 
+    ------------------------------
+    Here's what each part means:
+
+1. `priority_queue`: This is the template class for a priority queue in C++. A priority queue is an abstract data type that supports inserting elements with associated priority and allows retrieval of the element with the highest (or lowest) priority.
+
+2. `<int, vector<int>, greater<int>>`: These are template parameters for the `priority_queue` class.
+
+   - `int`: This specifies the type of elements that the priority queue will store. In this case, it's `int`, which means it's a priority queue of integers.
+   
+   - `vector<int>`: This specifies the underlying container type. In this case, it's `std::vector<int>`. The priority queue will use a vector to store the elements internally.
+   
+   - `greater<int>`: This is a comparator function object that determines the order of elements in the priority queue. `greater<int>` is a predefined function object that orders elements in decreasing order (i.e., from largest to smallest). 
+   This makes the priority queue behave like a min-heap, where the smallest element has the highest priority.
+
+   NOTES: RELATED TO THE ITERATORS: 
+   In C++, iterators are objects that provide a way to access elements in a container (like a set) in a generic and uniform way. When you use an iterator, you're not directly accessing the element itself, but rather a "pointer" or reference to it.
+
+To actually get the value that the iterator points to, you need to dereference it. This is done using the * operator.
