@@ -28,6 +28,7 @@ int main(){
     cout<<endl;
     cout<<"5 is present or not: "<<s.count(5)<<endl;
     
+    //auto it = s.find(5);
     set<int>:: iterator itr = s.find(5);
     for(auto i=itr;i!=s.end();i++){
         cout<<*i<<" ";

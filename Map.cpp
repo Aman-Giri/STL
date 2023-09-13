@@ -24,6 +24,7 @@ int main(){
     }
     cout<<endl;
 
+    //map<int,string>::iterator itr = m.find(2);
     auto it = m.find(2);
     for(auto i=it;i!=m.end();i++){
         cout<<(*i).first<<" "<<(*i).second<<endl;
